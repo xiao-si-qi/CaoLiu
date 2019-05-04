@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>555</title>
+</head>
+<body>
+<p>{{ filelist[0] }}</p>
+<p>第{{ page }}页，共{{ s }}页</p>
+<a href="{{ url_for("page",p=page-1) }}" >上一页</a><a href="{{ url_for("page",p=page+1) }}" >下一页</a><br>
+{% for file in filelist[1] %}
+ <img src="/{{ filelist[0] }}/{{ file }}"><br>
+{% endfor %}
+<a href="{{ url_for("page",p=page-1) }}" >上一页</a><a href="{{ url_for("page",p=page+1) }}" >下一页</a><br>
+<a href="{{ url_for("delfiles",path=filelist[0],p=page) }}">删除</a>
+</body>
+</html>

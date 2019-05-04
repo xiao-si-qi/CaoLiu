@@ -1,5 +1,6 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,url_for,redirect
 import os
+import shutil
 
 app = Flask(__name__)
 path = "static"+os.sep+"xxoo"
@@ -18,13 +19,22 @@ def pa():
 
 @app.route('/')
 def imglist():
-    filelist=[]
+    return redirect(url_for("page",p=1))
+@app.route('/page/<int:p>')
+def page(p):
+    filelist = []
     for dirpath, dirnames, filenames in os.walk(path):
         file=[]
         file.append(dirpath)
         file.append(filenames)
         filelist.append(file)
-    return render_template("listfile.html" ,filelist=filelist)
+    s= len(filelist)-1
+    return render_template("page.html" ,filelist=filelist[p],page=p,s=s)
+
+@app.route('/delfiles/<string:path>/<int:p>')
+def delfiles(path,p):
+    shutil.rmtree(path)  # 递归删除文件夹
+    return redirect(url_for("page",p=p))
 
 if __name__ == '__main__':
     app.run()
