@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件列表</title>
+</head>
+<body>
+{% for file in filelist %}
+    <a href="{{ file[0] }}">{{ file[0] }}</a><br>
+    {% for img in file[1] %}
+    <img src="{{ file[0] }}/{{ img }}"><br>
+    {% endfor %}
+{% endfor %}
+
+</body>
+</html>
