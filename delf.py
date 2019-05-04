@@ -6,7 +6,7 @@ def search(path):
   files=os.listdir(path)   #查找路径下的所有的文件夹及文件
   print(files)
   for filee in  files:
-      f=str(path+"\\"+filee)    #使用绝对路径
+      f=str(path+os.sep+filee)    #使用绝对路径
       print(f)
       if os.path.isdir(f):  #判断是文件夹还是文件
             if not os.listdir(f):  #判断文件夹是否为空
@@ -15,11 +15,11 @@ def search(path):
             else:
                files = os.listdir(f)
                for i in files:
-                   typr = imghdr.what(f+"\\" + i)
+                   typr = imghdr.what(f+os.sep + i)
                    if typr == None:
-                       print("文件不完整删除：", f+"\\" + i)
-                       os.remove(f+"\\" + i)
+                       print("文件不完整删除：", f+os.sep + i)
+                       os.remove(f+os.sep + i)
 
 if __name__ =='__main__':
-  path = r'static\xxoo'  #raw_input 函数数从命令输入
+  path = "static"+os.sep+"xxoo"  #raw_input 函数数从命令输入
   search(path)

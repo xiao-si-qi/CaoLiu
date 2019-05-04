@@ -2,7 +2,7 @@ from flask import Flask,render_template
 import os
 
 app = Flask(__name__)
-path = r'static\xxoo'
+path = "static"+os.sep+"xxoo"
 
 @app.route('/del')
 def delfile():

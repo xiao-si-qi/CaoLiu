@@ -9,7 +9,7 @@ from fake_useragent import UserAgent
 requests.packages.urllib3.disable_warnings()
 import threading
 
-imgpath = r'static\xxoo'
+imgpath = "static"+os.sep+"xxoo"
 
 ua = UserAgent()
 myHead = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"}
@@ -38,9 +38,9 @@ class myThread(threading.Thread):  # 继承父类threading.Thread
         with threading.Semaphore(100):
             try:
                 fileName = self.url.split("/")[-1]
-                folder = os.path.exists(imgpath +"/" + self.path + "/" + fileName)
+                folder = os.path.exists(imgpath +os.sep + self.path + os.sep + fileName)
                 if not folder:  # 判断文件是否已经存在
-                    with open(imgpath +"/" + self.path + "/" + fileName, "wb") as f:
+                    with open(imgpath +os.sep + self.path + os.sep + fileName, "wb") as f:
                         img = openUrlImg(self.url)
                         f.write(img)
                         print("保存", fileName, "完毕！")
@@ -51,7 +51,7 @@ class myThread(threading.Thread):  # 继承父类threading.Thread
 
 
 def sevMM(path,url):
-    folder = os.path.exists(imgpath+"/"+path)
+    folder = os.path.exists(imgpath+os.sep+path)
     if not folder:  # 判断是否存在文件夹如果不存在则创建为文件夹
         os.makedirs(imgpath+"/"+path)  # makedirs 创建文件时如果路径不存在会创建这个路径
     else:
@@ -74,10 +74,10 @@ def getimg(imgPage,path):
 
 
 def sevMenu(data):
-    with open(imgpath+"\menu.dat","wb") as f:
+    with open(imgpath+os.sep+"menu.dat","wb") as f:
         pickle.dump(data,f)  # 将列表倒入文件
 def opeMenu():
-    file = open(imgpath+"\menu.dat",'rb')
+    file = open(imgpath+os.sep+"menu.dat",'rb')
     data = pickle.load(file)
     return data
 
