@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,redirect
+from flask import Flask,render_template,url_for,redirect,request
 import os
 import shutil
 
@@ -19,7 +19,7 @@ def pa():
 
 @app.route('/')
 def imglist():
-    return redirect(url_for("page",p=1))
+    return redirect(url_for("page",p=0))
 @app.route('/page/<int:p>')
 def page(p):
     filelist = []
@@ -31,10 +31,20 @@ def page(p):
     s= len(filelist)-1
     return render_template("page.html" ,filelist=filelist[p],page=p,s=s)
 
-@app.route('/delfiles/<string:path>/<int:p>')
-def delfiles(path,p):
-    shutil.rmtree(path)  # 递归删除文件夹
-    return redirect(url_for("page",p=p))
+@app.route('/delfiles',methods=["POST"])
+def delfiles():
+    if request.method == "POST":
+        file= request.form.get("f")
+        page = request.form.get("page")
+        print(file)
+        if file=="static\\xxoo":
+            print("不能删除此目录")
+        else:
+            shutil.rmtree(file)  # 递归删除文件夹
+    # redirect:重定向，需要传入一个网址或路由地址
+    # url_for:传入视图函数，返回该视图函数对应的路由地址
+    return redirect(url_for("page",p=page))
+
 
 if __name__ == '__main__':
     app.run()

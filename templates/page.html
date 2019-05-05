@@ -1,17 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>555</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ filelist[0].split("\\")[-1] }}</title>
+    <style>
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            padding: 0;
+            margin: 0;
+        }
+
+        .content {
+            zoom: 1;
+        }
+
+        .content:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .TopBox, .EndBox {
+            float: left;
+            width: 100%;
+            margin: 5px;
+            background: #ffccf7;
+            display: inline;
+            -webkit-transition: width 1s ease;
+            -moz-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            -ms-transition: width 2s ease;
+            transition: width 1s ease;
+        }
+
+        .middleBox {
+            float: left;
+            width: 100%;
+            margin: 5px;
+            background: #b1fffc;
+            display: inline;
+            -webkit-transition: width 1s ease;
+            -moz-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            -ms-transition: width 1s ease;
+            transition: width 1s ease;
+        }
+
+        .EndBox {
+            background: #fffab1;
+        }
+
+        .mm_img {
+            width: 100%;
+        }
+
+        .sel_btn {
+
+            text-decoration: none;
+            padding: 10px 10px;
+            background: #139aff;
+            font-size: 25px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .sel_del {
+
+            text-decoration: none;
+            padding: 10px 10px;
+            background: #ff0400;
+            font-size: 25px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .ButtonBox {
+            height: 80px;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .content {
+                width: 1000px;
+                margin: auto
+            }
+
+
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 1024px) {
+
+
+            .TopBox {
+                width: 98%;
+            }
+
+            .middleBox {
+                width: 98%;
+
+            }
+
+            .EndBox {
+                width: 98%;
+
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+
+
+            .TopBox {
+                width: 98%;
+            }
+
+            .middleBox {
+                width: 98%;
+            }
+
+            .EndBox {
+                width: 98%;
+
+            }
+
+
+        }
+    </style>
+
 </head>
+
 <body>
-<p>{{ filelist[0] }}</p>
-<p>第{{ page }}页，共{{ s }}页</p>
-<a href="{{ url_for("page",p=page-1) }}" >上一页</a><a href="{{ url_for("page",p=page+1) }}" >下一页</a><br>
-{% for file in filelist[1] %}
- <img src="/{{ filelist[0] }}/{{ file }}"><br>
-{% endfor %}
-<a href="{{ url_for("page",p=page-1) }}" >上一页</a><a href="{{ url_for("page",p=page+1) }}" >下一页</a><br>
-<a href="{{ url_for("delfiles",path=filelist[0],p=page) }}">删除</a>
+<div class="content">
+    <div class="TopBox">
+        <h1>{{ filelist[0].split("\\")[-1] }}</h1>
+        <h2>第{{ page }}页，共{{ s }}页</h2>
+        <div class="ButtonBox">
+            <a class="sel_btn" href="{{ url_for("page",p=page-1) }}">上一页</a>
+            <a class="sel_btn" href="{{ url_for("page",p=page+1) }}">下一页</a>
+        </div>
+    </div>
+    <div class="middleBox">
+        {% for file in filelist[1] %}
+            <img class="mm_img" src="/{{ filelist[0] }}/{{ file }}"/>
+        {% endfor %}
+    </div>
+    <div class="EndBox">
+        <div class="ButtonBox">
+            <a class="sel_btn" href="{{ url_for("page",p=page-1) }}">上一页</a>
+            <a class="sel_btn" href="{{ url_for("page",p=page+1) }}">下一页</a>
+        </div>
+        <div class="ButtonBox">
+            <form id="_form" method="post" action="{{ url_for('delfiles') }}">
+                <input type="hidden" name="f" value="{{ filelist[0]}}"/>
+                 <input type="hidden" name="page" value="{{ page}}"/>
+                <a  class="sel_del"  onclick="document.getElementById('_form').submit();">删除本页</a>
+            </form>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
+
+
+
+
