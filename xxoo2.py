@@ -5,6 +5,7 @@ import bs4
 from urllib import parse
 import pickle #导入pickle模块
 import os,sys,io
+from urllib.parse import unquote
 from fake_useragent import UserAgent
 # 屏蔽warning信息
 requests.packages.urllib3.disable_warnings()
@@ -38,6 +39,7 @@ class myThread(threading.Thread):  # 继承父类threading.Thread
         with threading.Semaphore(100):
             try:
                 fileName = self.url.split("/")[-1]
+                fileName=unquote(fileName)
                 folder = os.path.exists(imgpath +os.sep + self.path + os.sep + fileName)
                 if not folder:  # 判断文件是否已经存在
                     with open(imgpath +os.sep + self.path + os.sep + fileName, "wb") as f:
@@ -79,10 +81,13 @@ def getimg(imgPage,path):
 def sevMenu(data):
     with open(imgpath+os.sep+"menu.dat","wb") as f:
         pickle.dump(data,f)  # 将列表倒入文件
+
+
 def opeMenu():
     file = open(imgpath+os.sep+"menu.dat",'rb')
     data = pickle.load(file)
     return data
+
 
 def getMenu(url):#获取目录并保存
         menu = []
@@ -93,7 +98,7 @@ def getMenu(url):#获取目录并保存
         print(title)
         for i in  title:
             line=[]
-            line.append(i.a["href"])
+            line.append( unquote(i.a["href"]))
             line.append(i.a.text)
             menu.append(line)
         print("==============添加目录中==================")
@@ -102,11 +107,13 @@ def getMenu(url):#获取目录并保存
 
 
 def main():
-        url = "https://www.2d-erocafe.com/"
+        url = "https://www.2d-erocafe.com/page/3/"
         try:
             menuList = opeMenu()
             print("保存的", menuList)
             print(len(menuList))
+            if len(menuList)==0:
+                os.remove("xxoo" + os.sep + "menu.dat")
         except Exception:
             getMenu(url)
             menuList = opeMenu()

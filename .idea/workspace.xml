@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d6ab6d-186a-4c78-b05c-045488430c70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xxoo2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/xxoo/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxoo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/xxoo2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,55 +28,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="295">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delf.py">
+        <entry file="file://$PROJECT_DIR$/xxoo2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xxoo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3240">
-              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+            <state relative-caret-position="-409">
+              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
               <folding>
-                <element signature="e#16#37#0" expanded="true" />
+                <element signature="e#17#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xxoo2.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -113,16 +90,15 @@
         <option value="$PROJECT_DIR$/templates/text.html" />
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/templates/page.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/xxoo.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/xxoo2.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-515" />
-    <option name="y" value="102" />
+    <option name="x" value="13" />
     <option name="width" value="1936" />
     <option name="height" value="1047" />
   </component>
@@ -145,17 +121,6 @@
               <item name="CaoLiu" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CaoLiu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaoLiu" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="xxoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CaoLiu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaoLiu" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -166,7 +131,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../html_player_server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -192,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.delf">
+  <component name="RunManager" selected="Flask server.CaoLiu">
     <configuration name="delf" type="PythonConfigurationType" factoryName="Python">
       <module name="CaoLiu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,7 +171,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/delf.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,8 +262,24 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="CaoLiu" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Flask server.CaoLiu" />
+      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Python.delf" />
       <item itemvalue="Python.xxoo" />
       <item itemvalue="Python.requirements" />
@@ -306,6 +287,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.xxoo2" />
         <item itemvalue="Python.requirements" />
       </list>
@@ -331,7 +313,9 @@
       <workItem from="1559452748612" duration="871000" />
       <workItem from="1560517568852" duration="8919000" />
       <workItem from="1561020756372" duration="597000" />
-      <workItem from="1561267167314" duration="610000" />
+      <workItem from="1561267167314" duration="1304000" />
+      <workItem from="1561273361875" duration="19000" />
+      <workItem from="1562221780729" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="项目初步完成">
       <created>1556953580274</created>
@@ -382,16 +366,23 @@
       <option name="project" value="LOCAL" />
       <updated>1559453531728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修复win 和 linux平台文件的目录分割符不所造成的问题">
+      <created>1561268202465</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561268202465</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43288000" />
+    <option name="totallyTimeSpent" value="47357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2260128" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3097015" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -423,11 +414,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="修复win 和 linux平台文件的目录分割符不所造成的问题" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CaoLiu$xxoo2.coverage" NAME="xxoo2 Coverage Results" MODIFIED="1560526546074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaoLiu$xxoo2.coverage" NAME="xxoo2 Coverage Results" MODIFIED="1562224787660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaoLiu$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1562224949665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/CaoLiu$requirements.coverage" NAME="requirements Coverage Results" MODIFIED="1556953489843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CaoLiu$CaoLiu.coverage" NAME="CaoLiu Coverage Results" MODIFIED="1560517799710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaoLiu$CaoLiu.coverage" NAME="CaoLiu Coverage Results" MODIFIED="1562225321817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CaoLiu$xxoo.coverage" NAME="xxoo Coverage Results" MODIFIED="1556955030138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CaoLiu$delf.coverage" NAME="delf Coverage Results" MODIFIED="1560526598481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaoLiu$delf.coverage" NAME="delf Coverage Results" MODIFIED="1562225260883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/xxoo/1.py" />
@@ -486,22 +478,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xxoo.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -513,10 +491,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【エロゲ】共有妻、美乃利 〜隣の部屋で抱かれている愛する妻〜【HCG画像】/aquras_0133jp-001.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【エロゲ】共有妻、美乃利 〜隣の部屋で抱かれている愛する妻〜【HCG画像】/aquras_0133jp-006.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【エロゲ】共有妻、美乃利 〜隣の部屋で抱かれている愛する妻〜【HCG画像】/aquras_0133jp-008.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【エロゲ】共有妻、美乃利 〜隣の部屋で抱かれている愛する妻〜【HCG画像】/aquras_0133jp-010.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part224【2018/015.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part224【2018/017.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part224【2018/24_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20006.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part224【2018/24_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20050.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part215【2018/15_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20001.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part215【2018/15_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20002.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part215【2018/15_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20003.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/本日のランダム最新二次エロ画像 Part215【2018/15_%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20004.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【アズールレーン】アルバコアのエロ画像まとめ！/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3%E3%80%80%E3%82%A2%E3%83%AB%E3%83%90%E3%82%B3%E3%82%A2%E3%81%AE%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F24.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【アズールレーン】アルバコアのエロ画像まとめ！/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3%E3%80%80%E3%82%A2%E3%83%AB%E3%83%90%E3%82%B3%E3%82%A2%E3%81%AE%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F28.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【アズールレーン】アルバコアのエロ画像まとめ！/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3%E3%80%80%E3%82%A2%E3%83%AB%E3%83%90%E3%82%B3%E3%82%A2%E3%81%AE%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F20.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【アズールレーン】アルバコアのエロ画像まとめ！/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3%E3%80%80%E3%82%A2%E3%83%AB%E3%83%90%E3%82%B3%E3%82%A2%E3%81%AE%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F04.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xxoo/【アズールレーン】アルバコアのエロ画像まとめ！/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3%E3%80%80%E3%82%A2%E3%83%AB%E3%83%90%E3%82%B3%E3%82%A2%E3%81%AE%E3%82%A8%E3%83%AD%E7%94%BB%E5%83%8F01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/CaoLiu/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="744" column="4" selection-start-line="744" selection-start-column="4" selection-end-line="744" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xxoo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="-409">
+          <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+          <folding>
+            <element signature="e#17#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>

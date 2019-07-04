@@ -17,6 +17,14 @@ def pa():
     xxoo.main()
     return "爬取中"
 
+
+@app.route('/pa2')
+def pa2():
+    import xxoo2
+    xxoo2.main()
+    return "爬取中"
+
+
 @app.route('/')
 def imglist():
     return redirect(url_for("page",p=0))
@@ -47,4 +55,4 @@ def delfiles():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=6000)
