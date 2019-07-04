@@ -106,8 +106,8 @@ def getMenu(url):#获取目录并保存
         sevMenu(menu)
 
 
-def main():
-        url = "https://www.2d-erocafe.com/page/3/"
+def main(p):
+        url = "https://www.2d-erocafe.com/page/"+str(p)+"/"
         try:
             menuList = opeMenu()
             print("保存的", menuList)

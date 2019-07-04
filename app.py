@@ -18,10 +18,10 @@ def pa():
     return "爬取中"
 
 
-@app.route('/pa2')
-def pa2():
+@app.route('/pa2/<int:p>')
+def pa2(p):
     import xxoo2
-    xxoo2.main()
+    xxoo2.main(p)
     return "爬取中"
 
 
